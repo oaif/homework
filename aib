@@ -1,38 +1,38 @@
 #include <stdio.h>
 
-int fun（char *a，char *b）
+int fun(char *a,char *b)
 
 {	
-int i，n=0，s=strlen（a）;
+	int i,n=0,s=strlen(a);
 
-for（i=0;i<s;i++）
+	for(i=0;i<s;i++)
 
-if（（a[i]==b[0]）&（a[i+1]==b[1]））
+	if((a[i]==b[0])&&(a[i+1]==b[1]))
 
-n++;
+			n++;
 
-返回 n;
+return n;
 
 }
 
-main（）
+main()
 
 {
 
-char a[10000]，b[10];
+	char a[10000],b[10];
 
-int n;
+	int n;
 
-printf（"请输入你的英语短句："）;
+	printf("请输入你的英语短句:");
 
-gets（a）;
+	gets(a);
 
-printf（"请输入你想筛选的单词："）;
+	printf("请输入你想筛选的单词:");
 
-gets（b）;
+	gets(b);
 
-n=乐趣（a，b）;
+	n=fun(a,b);
 
-printf（"该单词一共出现了%d次\n"，n）;
+	printf("该单词一共出现了%d次\n",n);
 
 }
